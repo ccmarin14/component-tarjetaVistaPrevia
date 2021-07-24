@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0,0%,95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+}
+
+main {
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 300px;
+    max-height: 1500px;
+    min-height: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.kind {
+    width: 300px;
+    padding: 50PX;
+}
+
+.paragraph {
+    margin-bottom: 100px;
+}
+
+.paragraph h1 {
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%)
+}
+
+.paragraph p {
+    line-height : 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container__one {
+    background-color: hsl(31,77%,52%);
+}
+
+.container__two {
+    background-color: hsl(184,100%,22%);
+}
+
+.container__three {
+    background-color: hsl(179, 100%, 13%)
+}
+
+.button {
+    padding: 15px 20px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    color:hsl(0, 0%, 95%);
+}
+
+.button p {
+    padding: 0 10px;
+}
+
+.container__one button p {
+    color: hsl(31,77%,52%);
+}
+
+.container__two button p {
+    color: hsl(184,100%,22%);
+}
+
+.container__three button p {
+    color: hsl(179, 100%, 13%);
+}
+
+.button:hover {
+    background-color: hsla(0, 0%, 100%, 0);
+
+}
+
+.button:hover > p{
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 960px) {
+    .container{
+        width: 300px;
+    }
+    .paragraph {
+        margin-bottom: 30px;
+    }
+}
